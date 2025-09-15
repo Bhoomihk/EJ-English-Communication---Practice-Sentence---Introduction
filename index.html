@@ -115,8 +115,8 @@
   .screen{
     background:var(--bg);
     padding:14px;
-    height:700px;
-    overflow:auto;
+    height: calc(100vh - 70px); /* ✅ fill screen minus header */
+    overflow-y: auto;
   }
 
   /* Message bubble container */
@@ -376,4 +376,5 @@ I neither have tea nor coffee.<span class="play-btn" onclick="playAudio('I neith
 </script>
 
 </body>
+
 </html>
